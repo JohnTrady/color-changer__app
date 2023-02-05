@@ -1,0 +1,124 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    color: #252B42;
+    width: 100%;
+    height: 100%;
+    font-weight: 500;
+    font-size: 14px;
+    background-color:#FAFAFA;
+    transition: background-color 0.5s ease 0s;
+    
+    
+    
+}
+
+button {
+    background-color: none;
+    border: none;
+    cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+ 
+  
+} 
+ul,
+ol, 
+li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+h1 , h2 ,h3 ,h4 ,h5 ,h6 , p {
+   margin: 0;
+}
+
+.wrapper {
+   min-height: 100vh;
+   overflow: hidden;
+   display: flex;
+   flex-direction: column;
+}
+
+.container {
+  max-width: 1046px;
+  margin: 0 auto;
+  padding:0px 15px;
+  text-align: center;
+
+}
+
+
+.main {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+}
+
+.title {
+    font-size: 45px;
+    text-align: center;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(153, 153, 153, 0.5);
+    padding: 30px ;
+    border-radius: 25px;
+}
+ .title .color-value {
+    margin-top:25px;
+    
+ }
+.color-value {
+   
+}
+.button {
+    text-align: center;
+    font-size: 30px;
+    background-color: orangered;
+    padding: 25px 50px;
+    border-radius: 8px;
+    color: #FAFAFA;
+    box-shadow: 0 6px #999;
+    transition: all  0.3s ease 0s;
+}
+
+.button:active {
+    
+    box-shadow: 0 3px #999;
+    transform: translateY(4px);
+   
+}
+.button:hover {
+    background-color: #983813;
+    
+}
+
+/* @media (hover: hover) {
+    
+} */
+/* @media (hover: none) {
+    .button:active {
+        background-color: #a13f19;
+        
+       
+    }
+} */
+
+
+@media (max-width: 767.98px) {
+    .title {
+       font-size: 30px;
+    }
+}
+
+@media (max-width: 497.98px) {
+    .button {
+       font-size: 20px;
+       padding: 15px 50px ;
+    }
+}
