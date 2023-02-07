@@ -3,6 +3,7 @@
 
 const changeButton = document.querySelector("#changer-btn");
 const hexValue = document.querySelector('.color-value');
+const buttons = document.querySelector('button');
 
 const  rgb = (r, g, b) => {
     return [r,g,b].map(function(x) {
@@ -24,5 +25,15 @@ const changeBG = () => {
 
 changeButton.addEventListener('click', changeBG);
 
+
+let touchStart = e =>{
+   buttons.classList.add('touch');
+};
+let touchEnd= e =>{
+  buttons.classList.remove('touch');
+};;
+
+buttons.addEventListener('touchstart', touchStart);
+buttons.addEventListener('touchend', touchEnd);
 
 
