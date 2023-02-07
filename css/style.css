@@ -85,6 +85,11 @@ h1 , h2 ,h3 ,h4 ,h5 ,h6 , p {
     color: #FAFAFA;
     box-shadow: 0 6px #999;
     transition: all  0.3s ease 0s;
+    user-select: none;
+    -webkit-user-select: none; /* Chrome / Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE 10+ */
+    user-select: none;
 }
 
 .button:active {
