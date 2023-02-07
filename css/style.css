@@ -93,24 +93,31 @@ h1 , h2 ,h3 ,h4 ,h5 ,h6 , p {
     transform: translateY(4px);
    
 }
-.button:hover {
-    background-color: #983813;
-    
-}
 
-/* @media (hover: hover) {
+
+@media (hover: hover) {
+  
+    .button:hover {
+        background-color: #983813;
+        
+    }
     
-} */
-/* @media (hover: none) {
+} 
+ @media (hover: none) {
+    body {
+        touch-action: pan-y;
+    }
+    
     .button:active {
         background-color: #a13f19;
         
        
     }
-} */
+}
 
 
 @media (max-width: 767.98px) {
+     
     .title {
        font-size: 30px;
     }
